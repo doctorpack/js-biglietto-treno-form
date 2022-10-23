@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(232, 50, 123);
+}
+
+h1{
+    color: white;
+}
+
+.items-container{
+    background-color: white;
+    height: 200px;
+  
+}
+.output-container{
+    background-color: white;
+    height: 200px;
+}
