@@ -21,3 +21,6 @@ h1{
     background-color: white;
     height: 200px;
 }
+.output-details{
+    justify-content: space-around;
+}
