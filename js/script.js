@@ -7,12 +7,12 @@ generateButton.addEventListener( "click" ,
         let userName = document.getElementById("userName").value;
         let userKm = document.getElementById("userKm").value;
         let userAge = document.getElementById("userAge").value;
-       
+        let num = Math.round(Math.random() * 20);
         // EXECUTING ACTIONS
         let userPrice = userKm * 0.21;
-        if(userAge === "Over"){
+        if(userAge === "over"){
             userPrice = userPrice - (userPrice * 0.4);
-        } else if(userAge === "Minorenne"){
+        } else if(userAge === "minorenne"){
             userPrice = userPrice - (userPrice * 0.2);
         }
         userPrice = userPrice.toFixed(2)
@@ -20,7 +20,9 @@ generateButton.addEventListener( "click" ,
         document.getElementById("op-userKm").innerHTML = `${userKm}`;
         document.getElementById("op-userAge").innerHTML = `${userAge}`;
         document.getElementById("op-userPrice").innerHTML = ` ${userPrice}`;
-        }
+        document.getElementById("casuale").innerHTML = num;
+    }
+        
     
     
 );
